@@ -1,0 +1,20 @@
+<h4>Formulario</h4>
+<form  class="row" (ngSubmit)="addCharacter()">
+  <input
+  type="text"
+  class="form-control mb-2"
+  placeholder="Nombre"
+  name="name"
+  [(ngModel)]="character.name">
+
+  <input
+    type="number"
+    class="form-control mb-2"
+    placeholder="Poder"
+    name="power"
+    [(ngModel)]="character.power">
+
+  <button type="submit" class="btn btn-primary">
+    Agregar
+  </button>
+</form>
